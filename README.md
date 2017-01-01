@@ -16,7 +16,7 @@ xsltproc fmpxmlresult2xcdatamodel.xslt YourTable.fmpxmlresult.xml > TestCoreData
 License
 =======
 
-Copyright (c) 2008 Gjermund Gusland Thorsen, released under the MIT License.
+Copyright (c) 2015 Gjermund Gusland Thorsen, released under the MIT License.
 
 All rights deserved.
 
