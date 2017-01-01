@@ -5,7 +5,7 @@
 	<xsl:template match="fmp:FMPXMLRESULT">
 		<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F1911" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
 			<xsl:value-of select="$tableName"/>
-			<entity name="{$databaseName}{$tableName}" syncable="YES">
+			<entity name="{$databaseName}.{$tableName}" syncable="YES">
 				<xsl:for-each select="fmp:METADATA/fmp:FIELD">
 					<attribute name="{@NAME}" optional="YES" attributeType="{concat(
 			              substring( 'String',			1 div boolean( @TYPE  = 'TEXT'      ) ),
@@ -17,10 +17,10 @@
 			              )}" defaultValueString="0" syncable="YES" />
 				</xsl:for-each>
 			</entity>
-		</model>
 		<elements>
-			<element name="{$databaseName}{$tableName}" positionX="-27" positionY="-16" width="128" height="208" />
+			<element name="{$databaseName}.{$tableName}" positionX="-27" positionY="-16" width="128" height="208" />
 		</elements>
+		</model>
 	</xsl:template>
 	<xsl:variable name="databaseName">
 		<xsl:value-of select="fmp:FMPXMLRESULT/fmp:DATABASE/@NAME"/>
