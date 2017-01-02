@@ -13,6 +13,10 @@ How to use this file in terminal
 ---
 xsltproc fmpxmlresult2xcdatamodel.xslt YourTable.fmpxmlresult.xml > TestCoreDataSwift/TestCoreDataSwift/TestCoreDataSwift.xcdatamodeld/TestCoreDataSwift.xcdatamodel/contents
 
+Use case
+---
+I use this stylesheet to generate CoreData local cache Entities with Attributes
+
 License
 =======
 
