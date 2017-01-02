@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Written by Gjermund G Thorsen 2015, all rights deserved -->
+<!-- Written by Gjermund G Thorsen 2015, all rights deserved
+If you are using an older or newer version of XCode than 8.2.1 you may want to copy/paste the model element from a CoreData file of yours
+-->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fmp="http://www.filemaker.com/fmpxmlresult" version="1.0">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
 	<xsl:template match="fmp:FMPXMLRESULT">
